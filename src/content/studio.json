@@ -35,5 +35,23 @@
       "isPlaceholder": true
     }
   ],
-  "footer": "Ethical, low-stress dog grooming in Berlin."
+  "footer": "Ethical, low-stress dog grooming in Berlin.",
+  "images": {
+    "hero": {
+      "src": "/photos/hero.jpg",
+      "alt": "A relaxed golden dog resting on grass and looking calmly toward the camera."
+    },
+    "calm": {
+      "src": "/photos/calm.jpg",
+      "alt": "A white dog lying peacefully on a wooden floor in soft daylight."
+    },
+    "rescue": {
+      "src": "/photos/rescue.jpg",
+      "alt": "A cream-coloured dog sitting calmly outdoors and looking toward the camera."
+    },
+    "hands": {
+      "src": "/photos/hands.jpg",
+      "alt": "Two relaxed dogs resting together on grass in warm light."
+    }
+  }
 }
