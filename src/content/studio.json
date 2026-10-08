@@ -36,6 +36,19 @@
     }
   ],
   "footer": "Ethical, low-stress dog grooming in Berlin.",
+  "groomer": {
+    "name": "[YOUR NAME]",
+    "role": "Gentle dog groomer",
+    "isPlaceholder": true,
+    "paragraphs": [
+      "[Write two or three sentences about who you are and why you groom this way. Say what you want a dog, and the person who loves them, to feel when they arrive.]",
+      "[Add only the training or experience you actually have. Leave out anything you cannot stand behind. This site does not claim to cure fear, illness, or behaviour.]"
+    ],
+    "photo": {
+      "src": "/photos/groomer.jpg",
+      "alt": "[Describe your photo. For example: the groomer sitting quietly with a calm dog.]"
+    }
+  },
   "images": {
     "hero": {
       "src": "/photos/hero.jpg",

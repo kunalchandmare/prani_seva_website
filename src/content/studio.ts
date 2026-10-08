@@ -3,6 +3,13 @@ import localStudio from "./studio.json";
 export type Price = { name: string; amount: string };
 export type Testimonial = { quote: string; isPlaceholder: boolean };
 export type StudioImage = { src: string; alt: string };
+export type Groomer = {
+  name: string;
+  role: string;
+  isPlaceholder: boolean;
+  paragraphs: string[];
+  photo: StudioImage;
+};
 
 export type Studio = {
   name: string;
@@ -22,6 +29,7 @@ export type Studio = {
   prices: Price[];
   testimonials: Testimonial[];
   footer: string;
+  groomer: Groomer;
   images: {
     hero: StudioImage;
     calm: StudioImage;
@@ -48,6 +56,21 @@ function mergeImage(remote: StudioImage | undefined, fallback: StudioImage): Stu
   return { src, alt };
 }
 
+function mergeGroomer(remote: Partial<Groomer> | undefined): Groomer {
+  const fallback = localStudioData.groomer;
+  if (!remote || typeof remote !== "object") return fallback;
+  const paragraphs = Array.isArray(remote.paragraphs)
+    ? remote.paragraphs.filter((item): item is string => typeof item === "string" && item.trim().length > 0)
+    : [];
+  return {
+    name: typeof remote.name === "string" && remote.name.trim() ? remote.name.trim() : fallback.name,
+    role: typeof remote.role === "string" && remote.role.trim() ? remote.role.trim() : fallback.role,
+    isPlaceholder: typeof remote.isPlaceholder === "boolean" ? remote.isPlaceholder : fallback.isPlaceholder,
+    paragraphs: paragraphs.length > 0 ? paragraphs : fallback.paragraphs,
+    photo: mergeImage(remote.photo, fallback.photo),
+  };
+}
+
 export function mergeStudio(remote: unknown): Studio {
   if (!remote || typeof remote !== "object") return localStudioData;
   const value = remote as Partial<Studio>;
@@ -67,6 +90,7 @@ export function mergeStudio(remote: unknown): Studio {
       rescue: mergeImage(images?.rescue, localStudioData.images.rescue),
       hands: mergeImage(images?.hands, localStudioData.images.hands),
     },
+    groomer: mergeGroomer(value.groomer),
   };
 }
 

@@ -28,6 +28,7 @@ Edit `src/content/studio.json`, save, and refresh the browser. Stop the server w
 | `prices` | Service names and amounts. Keep `[PRICE]` until you know the figure |
 | `testimonials` | Quotes. Set `isPlaceholder` to `false` only for a real review |
 | `images.hero`, `images.calm`, `images.rescue`, `images.hands` | The four photographs and their descriptions |
+| `groomer` | About section: name, role, paragraphs, and portrait. Set `isPlaceholder` to `false` when the words and photo are yours |
 
 ### Swap a photograph
 

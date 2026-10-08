@@ -10,6 +10,9 @@ The live site reads that file from GitHub. Refresh after the push lands. You do 
 - Leave `instagram` and `facebook` as `""` until the accounts exist. Use a full `https://` link when you add one.
 - Set `phoneIsPlaceholder` to `false` when the telephone number is real.
 - Set each testimonial `isPlaceholder` to `false` only for a genuine review.
+- The About section is `groomer`. Replace `[YOUR NAME]`, both paragraphs, and the portrait. Set `groomer.isPlaceholder` to `false` only when the words and photo are yours.
+
+The portrait file is `public/photos/groomer.jpg`. In JSON that path is `"/photos/groomer.jpg"`.
 
 ## Photographs
 

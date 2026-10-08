@@ -12,6 +12,7 @@ import { cn } from "@/lib/cn";
 import { safeWebUrl, type Studio } from "@/content/studio";
 
 const links = [
+  { href: "#about", label: "About" },
   { href: "#approach", label: "Approach" },
   { href: "#services", label: "Services" },
   { href: "#rescue", label: "Rescue dogs" },
@@ -239,6 +240,34 @@ export function HomePage({ studio }: { studio: Studio }) {
               Progress over perfection
             </li>
           </ul>
+        </section>
+
+        <section id="about" className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 lg:grid-cols-[minmax(0,0.85fr)_1.15fr] lg:py-24">
+          <figure className="overflow-hidden rounded-card bg-soft">
+            <img
+              src={studio.groomer.photo.src}
+              alt={studio.groomer.photo.alt}
+              className="aspect-[3/4] w-full object-cover"
+            />
+            {studio.groomer.isPlaceholder ? (
+              <figcaption className="border-t border-line bg-surface px-4 py-3 text-sm text-muted">
+                Placeholder portrait. Replace it with your own photo.
+              </figcaption>
+            ) : null}
+          </figure>
+          <div>
+            <p className="text-sm font-semibold tracking-widest text-primary uppercase">About me</p>
+            <h2 className="mt-2 font-display text-4xl leading-tight md:text-5xl">{studio.groomer.name}</h2>
+            <p className="mt-2 font-medium text-primary">{studio.groomer.role}</p>
+            {studio.groomer.isPlaceholder ? (
+              <p className="mt-4 text-sm font-semibold tracking-widest text-accent uppercase">Placeholder introduction</p>
+            ) : null}
+            {studio.groomer.paragraphs.map((paragraph) => (
+              <p key={paragraph} className="mt-4 text-muted">
+                {paragraph}
+              </p>
+            ))}
+          </div>
         </section>
 
         <section id="approach" className="mx-auto grid max-w-6xl gap-10 px-5 py-16 lg:grid-cols-2 lg:py-24">
