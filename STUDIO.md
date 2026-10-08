@@ -29,13 +29,12 @@ Each picture is an entry under `images`: `hero`, `calm`, `rescue`, and `hands`.
 
 Change `alt` whenever the picture changes. It is the description for someone who cannot see the image.
 
-Photographs in the repository use Git LFS. Replacing a file:
+Replacing a file:
 
 ```bash
-git lfs install
 git add public/photos/hero.jpg src/content/studio.json
 git commit -m "Update hero photo"
 git push
 ```
 
-Pushing sends the image to Git LFS and updates the live site on the next Vercel deploy.
+Pushing updates the live site on the next Vercel deploy.

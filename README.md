@@ -4,10 +4,9 @@ Ethical dog grooming site for the Berlin studio. Everything you can change witho
 
 ## Run locally for a quick debug
 
-You need [Node.js 22](https://nodejs.org/) or newer, and [Git LFS](https://git-lfs.com/) so the photographs download.
+You need [Node.js 22](https://nodejs.org/) or newer.
 
 ```bash
-git lfs install
 git clone https://github.com/kunalchandmare/prani_seva_website.git
 cd prani_seva_website
 npm install
@@ -32,7 +31,7 @@ Edit `src/content/studio.json`, save, and refresh the browser. Stop the server w
 
 ### Swap a photograph
 
-1. Save the new file in `public/`, for example `public/photos/hero.jpg`. Git LFS tracks `jpg`, `jpeg`, `png`, and `webp`.
+1. Save the new file in `public/`, for example `public/photos/hero.jpg`. Use `.jpg`, `.jpeg`, `.png`, or `.webp`.
 2. In `studio.json`, set that image’s `src` to the public path (`"/photos/hero.jpg"`) or to a full `https://` address.
 3. Rewrite `alt` so it describes the new picture.
 4. Push:
@@ -43,7 +42,7 @@ git commit -m "Update hero photo"
 git push
 ```
 
-Vercel pulls the Git LFS file and rebuilds. Refresh the live site after that deploy finishes.
+Vercel rebuilds from that push. Refresh the live site after the deploy finishes.
 
 ## Put the site on the live web
 
