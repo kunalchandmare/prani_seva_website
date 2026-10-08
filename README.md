@@ -34,4 +34,4 @@ Preview serves the built site. The dev server on port 8080 is the one to use whi
 4. Deploy. Vercel gives you a public URL.
 5. After that, every `git push` to `main` updates the live site.
 
-The dog photographs used in the preview are not stored in this repository, so those image areas stay empty when you run the clone. The rest of the page still loads.
+Photographs are included. `npm run dev` and `npm run build` unpack them into `public/photos` before the site starts. After this is on `main`, Vercel rebuilds and the pictures show on the live site. If they stay blank, open the Vercel project and click Redeploy.
