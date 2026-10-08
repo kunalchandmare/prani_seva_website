@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg: var(--theme-bg);
+  --color-surface: var(--theme-surface);
+  --color-fg: var(--theme-fg);
+  --color-muted: var(--theme-muted);
+  --color-primary: var(--theme-primary);
+  --color-primary-fg: var(--theme-primary-fg);
+  --color-accent: var(--theme-accent);
+  --color-accent-fg: var(--theme-accent-fg);
+  --color-line: var(--theme-line);
+  --color-soft: var(--theme-soft);
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --radius-card: var(--theme-radius);
+  --radius-control: var(--theme-control);
+}
+
+:root,
+[data-theme="astra"] {
+  --theme-bg: #f4efe6;
+  --theme-surface: #fffaf4;
+  --theme-fg: #2f2924;
+  --theme-muted: #64584e;
+  --theme-primary: #4f684d;
+  --theme-primary-fg: #f5f8f3;
+  --theme-accent: #8c4d3b;
+  --theme-accent-fg: #fff8f5;
+  --theme-line: #e4d6c4;
+  --theme-soft: #e5efe3;
+  --theme-radius: 1.35rem;
+  --theme-control: 999px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background: var(--theme-bg);
+    color: var(--theme-fg);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--theme-accent);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: var(--theme-soft);
+    color: var(--theme-fg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

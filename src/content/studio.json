@@ -1,0 +1,39 @@
+{
+  "name": "Prani-Seva",
+  "city": "Berlin",
+  "eyebrow": "Ethical grooming · Berlin",
+  "announcement": "Berlin studio · Tuesday–Saturday, by appointment",
+  "motto": "Fear is communication. We answer with patience.",
+  "email": "hello@prani-seva.berlin",
+  "phone": "+49 30 0000 0000",
+  "phoneIsPlaceholder": true,
+  "location": "Berlin studio. The exact address is shared after a consultation is confirmed.",
+  "hours": "Tuesday to Saturday, by appointment. Closed Sunday and Monday.",
+  "instagram": "",
+  "facebook": "",
+  "accessibility": "Tell us about access needs for you or your dog before you travel.",
+  "cancellation": "Please give 24 hours’ notice to change or cancel so the time reserved for your dog can be offered again.",
+  "prices": [
+    { "name": "Consultation", "amount": "[PRICE]" },
+    { "name": "Introduction session", "amount": "[PRICE]" },
+    { "name": "Gentle grooming session", "amount": "from [PRICE]" },
+    { "name": "Reiki session", "amount": "[PRICE]" },
+    { "name": "Animal communication session", "amount": "[PRICE]" },
+    { "name": "Gentle Start Package", "amount": "[PRICE]" }
+  ],
+  "testimonials": [
+    {
+      "quote": "We never felt judged when our rescue dog struggled. The groomer gave him time, explained everything, and helped us understand his signals.",
+      "isPlaceholder": true
+    },
+    {
+      "quote": "The calm approach made a huge difference. Our dog was able to complete more of the grooming than we expected.",
+      "isPlaceholder": true
+    },
+    {
+      "quote": "I appreciated the honesty. The session was adapted to what my dog could manage rather than forcing her through it.",
+      "isPlaceholder": true
+    }
+  ],
+  "footer": "Ethical, low-stress dog grooming in Berlin."
+}
