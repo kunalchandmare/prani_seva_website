@@ -213,8 +213,8 @@ export function HomePage({ studio }: { studio: Studio }) {
           </div>
           <figure className="overflow-hidden rounded-card bg-soft shadow-sm">
             <img
-              src="/photos/hero.jpg"
-              alt="A relaxed golden dog resting on grass and looking calmly toward the camera."
+              src={studio.images.hero.src}
+              alt={studio.images.hero.alt}
               className="aspect-[4/5] w-full object-cover sm:aspect-[5/4]"
             />
           </figure>
@@ -252,7 +252,7 @@ export function HomePage({ studio }: { studio: Studio }) {
               We use a patient, individualised approach instead of rushing dogs through a fixed routine. A dog may need several short visits before a full session feels possible.
             </p>
             <figure className="mt-6 overflow-hidden rounded-card">
-              <img src="/photos/calm.jpg" alt="A white dog lying peacefully on a wooden floor in soft daylight." className="aspect-[5/3] w-full object-cover" />
+              <img src={studio.images.calm.src} alt={studio.images.calm.alt} className="aspect-[5/3] w-full object-cover" />
             </figure>
           </div>
           <div>
@@ -373,7 +373,7 @@ export function HomePage({ studio }: { studio: Studio }) {
             </p>
           </div>
           <figure className="overflow-hidden rounded-card">
-            <img src="/photos/rescue.jpg" alt="A cream-coloured dog sitting calmly outdoors and looking toward the camera." className="aspect-[4/5] w-full object-cover" />
+            <img src={studio.images.rescue.src} alt={studio.images.rescue.alt} className="aspect-[4/5] w-full object-cover" />
           </figure>
         </section>
 
@@ -397,7 +397,7 @@ export function HomePage({ studio }: { studio: Studio }) {
               </ol>
             </div>
             <figure className="overflow-hidden rounded-card">
-              <img src="/photos/hands.jpg" alt="Two relaxed dogs resting together on grass in warm light." className="h-full min-h-80 w-full object-cover" />
+              <img src={studio.images.hands.src} alt={studio.images.hands.alt} className="h-full min-h-80 w-full object-cover" />
             </figure>
           </div>
         </section>
