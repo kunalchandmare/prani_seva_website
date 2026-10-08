@@ -1,6 +1,6 @@
 # Ethical & Holistic Dog Grooming Website Prompt
 
-Create a warm, calming, trustworthy website for an ethical and holistic dog-grooming service called "Pran-Seva", based in Berlin.
+Create a warm, calming, trustworthy website for an ethical and holistic dog-grooming service called "Prani-Seva", based in Berlin.
 
 The business provides gentle dog grooming with a strong focus on emotional wellbeing, consent-based handling, cooperative care, and low-stress experiences. The service is especially welcoming to rescue and shelter dogs, nervous dogs, older dogs, sensitive dogs, and dogs who have had difficult grooming experiences in the past.
 
@@ -329,12 +329,12 @@ Make the website:
 
 Include page titles and meta descriptions using phrases such as:
 
-- Ethical dog grooming in **[CITY]**.
+- Ethical dog grooming in Berlin.
 - Gentle dog grooming for nervous dogs.
 - Rescue dog grooming.
 - Low-stress dog grooming.
 - Holistic dog wellbeing.
-- Reiki for dogs in **[CITY]**.
+- Reiki for dogs in Berlin.
 
 ## Overall message
 
